@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<head>
+    <style>
+        img {
+  position: static;
+  left: 100px;
+  top: 100px;
+  z-index: -1;
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  opacity: 0.5;
+  
+
+}
+img:hover{
+  opacity: 0.9;
+}
+        
+.container {
+  position: relative;
+}
+      
+      .black-box {
+        position: absolute;
+        z-index: 1;
+        border: 2px solid black;
+        height: 100px;
+        margin: 30px;
+        width: 100%;
+      }
+      
+      .gray-box {
+        position: relative;
+        z-index: 3; /* gray box will be above both green and black box */
+        background: lightgray;
+        height: 60px;  
+        width: 70%;
+        left: 50px;
+        top: 50px;
+      }
+      
+      .green-box {
+        position: relative;
+        z-index: 2; /* green box will be above black box */
+        background: lightgreen;
+        width: 35%;
+        left: 270px;
+        top: -30px;
+        height: 100px;
+      }
+      #A1 {
+  background-color: coral;
+  width: 200px;
+  height: 65px;
+  border: 1px solid;
+  overflow: auto;
+  position: absolute;
+}
+#a2 {
+  background-color: blue;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  
+}
+
+#a2:hover {
+  background-color: yellow;
+  
+}
+a:link{
+  color: aqua;
+
+}
+a:visited{
+  color: blue;
+}
+a:hover{
+  color: black;
+}
+a:active{
+  color: blanchedalmond;
+}
+     
+    </style>
+   
+</head>
+<body>
+    <h1>This is a heading</h1>
+<img src="cat-8575641_1280.jpg">
+
+<p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+
+<p><b><a href="">This is a link</a></b></p>
+      
+      <h1 id="a2">Z-index Example</h1>
+      
+      <p>An element with greater stack order is always above an element with a lower stack order.</p>
+      
+      <div class="container">
+        <div class="black-box">Black box (z-index: 1)</div>
+        <div class="gray-box">Gray box (z-index: 3)</div>
+        <div class="green-box">Green box (z-index: 2)</div>
+      </div>
+      <h2>Overflow: visible</h2>
+
+
+<div id="A1">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+
+    
+</body>
+</html>
