@@ -63,6 +63,10 @@ img:hover{
   border: 1px solid;
   overflow: auto;
   position: absolute;
+
+  
+
+  
 }
 #a2 {
   background-color: blue;
@@ -89,6 +93,20 @@ a:hover{
 a:active{
   color: blanchedalmond;
 }
+p::first-line{
+  color: blueviolet;
+  font-variant: small-caps;
+  
+}
+p::first-letter{
+  color: black;
+  font-size: large;
+}
+h3::before{
+  content: url(Untitled.jpeg);
+}
+
+  
      
     </style>
    
@@ -111,10 +129,12 @@ a:active{
         <div class="green-box">Green box (z-index: 2)</div>
       </div>
       <h2>Overflow: visible</h2>
+     
 
 
 <div id="A1">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
 
+<h3>This is the heading</h3>
 
     
 </body>
