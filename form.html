@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    input[type=text]{
+        width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 4px solid red;
+  background-color: aqua;
+    }
+    input[type=text]:focus{
+        background-color: antiquewhite;
+    }
+    #a1 input[type=text]:focus{
+        background-color: blueviolet;
+        width: 1000px;
+        transition: 0.4s ease-in-out;
+    }
+    select{
+        width: 200px;
+        padding: 16px 20px;
+        background-color: grey;
+    }
+    input[type=submit]{
+        background-color: green;
+        width: 100px ;
+        height: 50px;
+    }
+    
+</style>
+        
+
+        
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<h2>Padded input fields</h2>
+
+ initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>form</h1>
+    <form id="a1" action="">
+        <input type="text" name="search" placeholder="Search..">
+    </form>
+    <form>   
+        
+      
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname"> <br>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname">
+      </form>
+      <select id="country" name="country">
+        <option value="au">Australia</option>
+        <option value="ca">Canada</option>
+        <option value="usa">USA</option>
+        </select>
+        <form action=""><input type="submit" value="Submit"></form>
+        
+   
+    
+</body>
+</html>
