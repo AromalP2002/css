@@ -29,6 +29,29 @@
         width: 100px ;
         height: 50px;
     }
+    .flex-container {
+        background-color: DodgerBlue;
+        
+  display: flex;
+ 
+ 
+  flex-wrap:wrap;
+  flex-flow: row;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+  height: 300px;
+  flex-direction: row;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  text-align: center;
+  margin: 10px;
+ line-height: 75px;
+  font-size: 30px;
+}
     
 </style>
         
@@ -60,6 +83,12 @@
         <option value="usa">USA</option>
         </select>
         <form action=""><input type="submit" value="Submit"></form>
+        <div class="flex-container"></div>
+            <div style="overflow: 3">1</div>
+            <div style="overflow: 3">2</div>
+            <div style="overflow: 3">3</div> 
+            <div style="overflow: 3">4</div>
+          </div>
         
    
     
