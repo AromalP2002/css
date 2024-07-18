@@ -1,96 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<style>
-    input[type=text]{
-        width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none;
-  border-bottom: 4px solid red;
-  background-color: aqua;
-    }
-    input[type=text]:focus{
-        background-color: antiquewhite;
-    }
-    #a1 input[type=text]:focus{
-        background-color: blueviolet;
-        width: 1000px;
-        transition: 0.4s ease-in-out;
-    }
-    select{
-        width: 200px;
-        padding: 16px 20px;
-        background-color: grey;
-    }
-    input[type=submit]{
-        background-color: green;
-        width: 100px ;
-        height: 50px;
-    }
-    .flex-container {
-        background-color: DodgerBlue;
-        
-  display: flex;
- 
- 
-  flex-wrap:wrap;
-  flex-flow: row;
-  justify-content: center;
-  align-items: stretch;
-  align-content: center;
-  height: 300px;
-  flex-direction: row;
-}
+    <style>
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 4px solid red;
+            background-color: aqua;
+        }
 
-.flex-container > div {
-  background-color: #f1f1f1;
-  width: 100px;
-  text-align: center;
-  margin: 10px;
- line-height: 75px;
-  font-size: 30px;
-}
-    
-</style>
-        
+        input[type=text]:focus {
+            background-color: antiquewhite;
+        }
 
+        #a1 input[type=text]:focus {
+            background-color: blueviolet;
+            width: 1000px;
+            transition: 0.4s ease-in-out;
+        }
+
+        select {
+            width: 200px;
+            padding: 16px 20px;
+            background-color: grey;
+        }
+
+        input[type=submit] {
+            background-color: green;
+            width: 100px;
+            height: 50px;
+        }
+
+        .flex-container {
+            background-color: DodgerBlue;
+
+            display: flex;
+
+
+            flex-wrap: wrap;
+            flex-flow: row;
+            justify-content: center;
+            align-items: stretch;
+            align-content: center;
+            height: 300px;
+            flex-direction: row;
+        }
+
+        .flex-container>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            text-align: center;
+            margin: 10px;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: #2196F3;
+            padding: 10px;
+            gap: 10px;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 80px 100px;
+           
+            align-content: start;
+
+
+
+        }
+
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .item3 {
+            grid-area: 1/4/5/3
+            
+            
+        }
         
-    
+    </style>
+
+
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<h2>Padded input fields</h2>
 
  initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>form</h1>
     <form id="a1" action="">
         <input type="text" name="search" placeholder="Search..">
     </form>
-    <form>   
-        
-      
+    <form>
+
+
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="fname"> <br>
         <label for="lname">Last Name</label>
         <input type="text" id="lname" name="lname">
-      </form>
-      <select id="country" name="country">
+    </form>
+    <select id="country" name="country">
         <option value="au">Australia</option>
         <option value="ca">Canada</option>
         <option value="usa">USA</option>
-        </select>
-        <form action=""><input type="submit" value="Submit"></form>
-        <div class="flex-container"></div>
-            <div style="overflow: 3">1</div>
-            <div style="overflow: 3">2</div>
-            <div style="overflow: 3">3</div> 
-            <div style="overflow: 3">4</div>
-          </div>
-        
-   
-    
+    </select>
+    <form action=""><input type="submit" value="Submit"></form>
+    <div class="flex-container"></div>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    </div>
+    <div class="grid-container">
+        <div class="item1">heder</div>
+        <div class="item2">footer</div>
+        <div class="item3">right</div>
+        <div class="item4">menu</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+    </div>
+
+
+
+
 </body>
+
 </html>
