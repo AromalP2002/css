@@ -52,6 +52,40 @@ img{
     left: 35%;
     text-align: center;
 }
+* {
+  box-sizing: border-box;
+}
+
+
+/* .row{
+  display: flex;
+  flex-wrap: wrap;
+} */
+.column1{
+  float: left ;
+  width: 25%;
+  padding: 25px;
+}
+@media screen and (max-width: 600px) {
+  ul li {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .column1 {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column1 {
+    width: 100%;
+  }
+}
+
+
+
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,6 +103,27 @@ img{
       <div>
       <img src="vmyr.webp" alt="">
       <div class="center">zero to Hundred real quick with this is beauty</div>
+      </div>
+      <div class="row">
+        <div class="column1" style="background-color:#aaa;">
+          <h2>Column 1</h2>
+          <p>Some text..</p>
+        </div>
+        
+        <div class="column1" style="background-color:#bbb;">
+          <h2>Column 2</h2>
+          <p>Some text..</p>
+        </div>
+        
+        <div class="column1" style="background-color:#ccc;">
+          <h2>Column 3</h2>
+          <p>Some text..</p>
+        </div>
+        
+        <div class="column1" style="background-color:#ddd;">
+          <h2>Column 4</h2>
+          <p>Some text..</p>
+        </div>
       </div>
       
 </body>
