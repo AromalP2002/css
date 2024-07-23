@@ -23,6 +23,8 @@
 
             background-color: aqua ;
             padding: 10px;
+
+
         }
         .head{
             background-color: rgb(163, 237, 163);
@@ -49,8 +51,10 @@
         }
         .msg{
             background-color: rgb(27, 202, 144);
-            padding: 30px;
+            /* padding: 30px; */
             text-align: center;
+            font-size: 2vw;
+            
         }
         .img{
             background-color: bisque;
@@ -67,7 +71,7 @@
         
           img{
             width: 100%;
-            height:430px;
+            height:100%;
             
 
         } 
@@ -88,17 +92,30 @@
         .nav a{
             text-decoration: none;
         }
+        
         @media screen and (max-width: 700px) {
-  .sub, .nav {   
-    flex-direction: column;
+     
+            .main {
+         
+            grid-template-areas: 
+            'head head head head'
+            'nav nav nav nav' 
+            'sub sub sub sub '
+            'img img img img'
+            'msg msg msg msg '
+            'button button button button';
+            grid-template-rows: 60px 60px 270px 250px 150px 100px;
+    
   }
 }
+
     
         
 
     </style>
 </head>
 <body>
+    
     <div class="main">
     <div class="head">web Diary</div>
     <div class="nav"><a href="">Home<a href="">About</a><a href="">Contact</a></div>
@@ -106,7 +123,11 @@
     
     <div class="msg">"Lorem ipsum dolor sit amet,"</div>
     <div class="img"><img src="vmyr.webp" ></div>
-    <div class="button"><div class="view1">read more</div><div class="view2">view all</div></div>
+    <div class="button"><div class="view1">read more</div><div class="view2">view all</div>
 </div>
+    
+    
+</div>
+
 </body>
 </html>
